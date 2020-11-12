@@ -1,0 +1,5 @@
+# local sync to remote
+rsync -av ~/org/org_files/* dev:~/org_files
+
+#remote sync to host
+rsync -av dev:~/org_files/ ~/org/org_files
